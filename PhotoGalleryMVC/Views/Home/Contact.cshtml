@@ -21,13 +21,13 @@
     </div>
 </div>
 
-<div class="contactForm">
-    <input id="fullName" class="fullNameInput" type="text" placeholder="Full Name" />
-    <input id="email" class="emailInput" type="text" placeholder="Email" />
-    <input id="title" class="titleInput" type="text" placeholder="Title" />
-    <textarea id ="messageArea" class="messageTextArea" placeholder="Type your message here" ></textarea>
+<form id="contactMeForm" class="contactForm">
+    <input id="fullName" class="fullNameInput" type="text" placeholder="Full Name" name="fullName"/>
+    <input id="email" class="emailInput" type="text" placeholder="Email" name="userEmail" />
+    <input id="title" class="titleInput" type="text" placeholder="Title" name="title" />
+    <textarea id="messageArea" class="messageTextArea" placeholder="Type your message here" name="messageArea"></textarea>    
     <div class="extraSubmitRow">
         <input id="file" class="uploadFile" type="file" />
-        <input id="Submit" class="submitBtn" type="submit" value="Send" />
+        <input id="Submit" class="submitBtn" type="submit" value="Send" onclick="photoGalleryClientHelper.onSubmitClick()" />
     </div>
-</div>
+</form>

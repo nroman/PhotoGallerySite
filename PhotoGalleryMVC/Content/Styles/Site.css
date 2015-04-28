@@ -162,3 +162,8 @@
 .submitBtn:focus {
     outline: 0;
 }
+
+.invalidValue {
+    color: red;
+    margin-left: 10px;
+}

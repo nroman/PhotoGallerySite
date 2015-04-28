@@ -31,12 +31,8 @@
     
     <script type="text/javascript">
         $(document).ready(function () {
-            $(".menu a").each(function () {
-                var pageAbsPath = '@HttpContext.Current.Request.Url.AbsolutePath';
-                if ($(this).attr('href') === pageAbsPath) {
-                    $(this).addClass("activeLink");
-                }
-            });
+            var pageAbsPath = '@HttpContext.Current.Request.Url.AbsolutePath';
+            window.photoGalleryClientHelper.showActiveMenuItem(pageAbsPath);
         });
     </script>
 </body>
