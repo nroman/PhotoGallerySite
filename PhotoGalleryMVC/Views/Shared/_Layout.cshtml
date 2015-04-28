@@ -11,10 +11,10 @@
         <div class="logo"></div>
         <div class="menu">
             <ul>
-                <li>contact</li>
-                <li>services</li>
-                <li>about</li>
-                <li>work</li>                
+                <li>@Html.ActionLink("contact","Contact","Home")</li>
+                <li>@Html.ActionLink("services", "Services", "Home")</li>
+                <li>@Html.ActionLink("about", "About", "Home")</li>
+                <li>@Html.ActionLink("work", "Index", "Home")</li>                
             </ul>
         </div>
         <div class="socialButtons">
@@ -23,10 +23,21 @@
             </a>
         </div>
     </div>
-    <div>
+    <div class="pageContent">
         @RenderBody()
     </div>
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".menu a").each(function () {
+                var pageAbsPath = '@HttpContext.Current.Request.Url.AbsolutePath';
+                if ($(this).attr('href') === pageAbsPath) {
+                    $(this).addClass("activeLink");
+                }
+            });
+        });
+    </script>
 </body>
 </html>
