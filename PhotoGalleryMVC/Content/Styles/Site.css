@@ -2,6 +2,7 @@
     background-color: #fff;
     height: 1400px;
     margin: 0px;
+    font-family: Arial, Tahoma;
 }
 
 .header {
@@ -16,7 +17,7 @@
     margin-left:auto;
     margin-right: auto;
     height: 50px;
-    width: 75%;
+    width: 76%;
     margin: 40px 0 0 0;
 }
 
@@ -28,7 +29,6 @@
     float: right;
     padding: 30px 0 0px 25px;
     font-size: 12pt;
-    font-family: Arial, raleway, Tahoma;
     line-height: 1.7;  
     display: block;
     height: 25px;
@@ -69,13 +69,96 @@
 }
 
 .internalContent {
-   padding: 0;
-   margin: 0;
-   font-family: Arial, raleway, Tahoma;
+    padding: 0;
+    margin-top: 35px;
+    font-size: 11pt;
+    line-height: 1.7;
+    color: black; 
+    min-width: 200px;
+    float: right;
+    width: 75%;
+}
+
+.contactInfo {
+    width: 35%;
+    float: left;
+}
+
+.contactInfo .title {
+    padding-left: 31%;
+}
+
+.contactInfo .contactDescription span {
+    color: #78A1B9;
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 12pt;
+}
+
+.contactDescription {
+    text-align: left;
+    padding-left: 31%;
+    padding-top: 70px;
+    width: 61%;
+    min-width: 220px;
+}
+
+.contactForm {
+    float: right;
+    width: 62%;
+    margin-top: 15px;
+    margin-left: 3%;
+}
+
+.contactForm input,textarea {
+   width: 58%;
+   max-width: 58%;
    font-size: 11pt;
-   line-height: 1.7;
-   color: black; 
-   min-width: 200px;
-   float: right;
-   width: 75%;
+   height: 37px;
+   margin-top: 25px;
+   padding-left: 10px;
+   border: 1px solid #1F1F1F;
+}
+
+.contactForm textarea {
+   height: 150px;
+   resize: none;
+}
+
+.uploadFile {
+   padding: 3px;
+   height: initial !important;
+   width: 23% !important;
+}
+
+.extraSubmitRow{
+   display: block;   
+   margin-top: -15px;    
+}
+
+.extraSubmitRow input {
+    padding-left: 3px;
+}
+
+.submitBtn {
+   color: #8D8D8D;
+   border: 0 !important;
+   text-transform: uppercase;
+   font-size: 20pt !important;
+   padding: 0;
+   height: 30px !important;
+   line-height: 0.1;
+   background-color: #fff;
+   font-weight: bold;
+   width: 86px !important;
+   margin-left: 28%;
+}
+
+.submitBtn:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.submitBtn:focus {
+    outline: 0;
 }

@@ -4,5 +4,30 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="title">Contact</div>
+<div class="contactInfo">
+    <div class="title">Contact</div>
+    <div class="contactDescription">
+        Hi there!<br /><br />
+    
+        If you have a specific project you would like to discuss, use the information below to reach us, or drop us a line using the contact form.<br /><br />
+        
+        <span>Address:</span>0XX7 Santa Monica Boulevard; Los Angeles, California X23XX; USA<br />
+        
+        <span>Phone:</span>(347)-333-4665<br />
+        
+        <span>Email:</span>xtester@gmail.com<br />
+        
+        <span>Skype:</span>testmyskype
+    </div>
+</div>
 
+<div class="contactForm">
+    <input id="fullName" class="fullNameInput" type="text" placeholder="Full Name" />
+    <input id="email" class="emailInput" type="text" placeholder="Email" />
+    <input id="title" class="titleInput" type="text" placeholder="Title" />
+    <textarea id ="messageArea" class="messageTextArea" placeholder="Type your message here" ></textarea>
+    <div class="extraSubmitRow">
+        <input id="file" class="uploadFile" type="file" />
+        <input id="Submit" class="submitBtn" type="submit" value="Send" />
+    </div>
+</div>
