@@ -11,7 +11,7 @@ namespace PhotoGalleryMVC.App_Start
                 "~/Content/Scripts/jquery-{version}.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/Site.css"));
+                      "~/Content/Styles/Site.css"));
         }
     }
 }
