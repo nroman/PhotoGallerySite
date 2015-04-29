@@ -43,6 +43,10 @@
     cursor: pointer;
 }
 
+.menu a:active {
+    color: black;
+}
+
 .activeLink {
     font-weight: bold;
     color: black !important;
