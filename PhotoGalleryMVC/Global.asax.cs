@@ -1,4 +1,6 @@
 ﻿using PhotoGalleryMVC.App_Start;
+using PhotoGalleryMVC.Areas.Admin;
+using PhotoGalleryMVC.Areas.Default;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +16,7 @@ namespace PhotoGalleryMVC
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
+            //RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
     }
