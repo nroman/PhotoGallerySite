@@ -10,6 +10,7 @@ namespace PhotoGalleryMVC.App_Start
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                 "~/Scripts/jquery-{version}.js",
                 "~/Scripts/jquery.validate.js",
+                "~/Scripts/jquery.isotope.min.js",
                 "~/Scripts/photoGalleryMVC.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
