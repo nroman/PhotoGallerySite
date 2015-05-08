@@ -1,8 +1,8 @@
 ﻿body {
     background-color: #fff;
-    height: 1400px;
     margin: 0px;
     font-family: Arial, Tahoma;
+    overflow-x: hidden;
 }
 
 .header {
@@ -70,6 +70,22 @@
     text-align: left;
     padding: 0 0 0 11%;
     font-size: 20pt;
+}
+
+.errorTitle {
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+    margin-left: auto;
+    font-size: 18pt;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 5%;
+    text-align: center; 
+}
+
+.errorTitle h1 {
+    display: initial;
 }
 
 .internalContent {
@@ -170,4 +186,14 @@
 .invalidValue {
     color: red;
     margin-left: 10px;
+}
+
+.customGallery {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.galleryContent {
+    margin-left: 10%;
 }

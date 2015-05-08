@@ -8,6 +8,11 @@
         windowParent.photoGalleryClientHelper = {};
     }
 
+    $(windowParent).load(function () {
+        var $container = $('#gallery-content-center');
+        $container.isotope({ itemSelector: 'img' });
+    });    
+
     windowParent.photoGalleryClientHelper =
     {
         showActiveMenuItem: function (pageAbsPath) {

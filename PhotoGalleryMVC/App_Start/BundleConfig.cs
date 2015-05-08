@@ -13,7 +13,8 @@ namespace PhotoGalleryMVC.App_Start
                 "~/Scripts/jquery.isotope.min.js",
                 "~/Scripts/photoGalleryMVC.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
+            bundles.Add(new StyleBundle("~/Content/css").Include(                     
+                      "~/Content/Styles/animated-masonry-gallery.css",
                       "~/Content/Styles/Site.css"));
         }
     }
